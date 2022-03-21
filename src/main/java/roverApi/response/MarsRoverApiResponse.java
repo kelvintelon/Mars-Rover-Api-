@@ -1,4 +1,4 @@
-package com.example.demo.response;
+package roverApi.response;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,15 +6,15 @@ import java.util.List;
 public class MarsRoverApiResponse {
 	
 	// starting point from response
-	List<MarsPhotos> photos = new ArrayList<>();
- 
- 
-	public List<MarsPhotos> getPhotos() {
+	List<MarsPhoto> photos = new ArrayList<>();
+
+
+	public List<MarsPhoto> getPhotos() {
 		return photos;
 	}
 
 
-	public void setPhotos(List<MarsPhotos> photos) {
+	public void setPhotos(List<MarsPhoto> photos) {
 		this.photos = photos;
 	}
 
@@ -23,5 +23,8 @@ public class MarsRoverApiResponse {
 	public String toString() {
 		return "MarsRoverApiResponse [photos=" + photos + "]";
 	}
+
+
+	
 
 }

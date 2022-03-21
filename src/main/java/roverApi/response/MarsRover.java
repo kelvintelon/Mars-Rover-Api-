@@ -1,4 +1,4 @@
-package com.example.demo.response;
+package roverApi.response;
 
 import java.util.Date;
 
@@ -10,6 +10,7 @@ public class MarsRover {
 	
 	@JsonProperty("landing_date")
 	private Date landingDate;
+	
 
 	public Long getId() {
 		return id;
@@ -35,10 +36,6 @@ public class MarsRover {
 		this.landingDate = landingDate;
 	}
 
-	@Override
-	public String toString() {
-		return "MarsRover [id=" + id + ", name=" + name + ", landingDate=" + landingDate + "]";
-	}
-	
+
 	
 }

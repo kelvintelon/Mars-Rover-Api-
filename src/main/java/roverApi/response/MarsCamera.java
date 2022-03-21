@@ -1,4 +1,4 @@
-package com.example.demo.response;
+package roverApi.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -12,6 +12,7 @@ public class MarsCamera {
 	
 	@JsonProperty("full_name")
 	private String fullName;
+	
 	
 	public Long getId() {
 		return id;
