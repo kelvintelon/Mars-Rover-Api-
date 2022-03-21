@@ -1,11 +1,24 @@
-package com.example.demo;
+package com.example.demo.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MarsPhotos {
 	// picking attributes from JSON response key value pairs
 	private Long id;
 	private Integer sol;
 	private MarsCamera camera;
+	
+	@JsonProperty("img_src")
 	private String imgSrc;
+	
+	@JsonProperty("earth_date")
+	private String earthDate;
+	
+	private MarsRover rover;
+	
+	@JsonProperty("launch_date")
+	private String launchDate;
+	
 	
 	public Long getId() {
 		return id;
@@ -32,6 +45,27 @@ public class MarsPhotos {
 		this.imgSrc = imgSrc;
 	}
 	
+	public String getEarthDate() {
+		return earthDate;
+	}
+	public void setEarthDate(String earthDate) {
+		this.earthDate = earthDate;
+	}
+	
+	public MarsRover getRover() {
+		return rover;
+	}
+	public void setRover(MarsRover rover) {
+		this.rover = rover;
+	}
+	
+	
+	public String getLaunchDate() {
+		return launchDate;
+	}
+	public void setLaunchDate(String launchDate) {
+		this.launchDate = launchDate;
+	}
 	@Override
 	public String toString() {
 		return "MarsPhotos [id=" + id + ", sol=" + sol + ", camera=" + camera + ", imgSrc=" + imgSrc + "]";
