@@ -12,6 +12,7 @@
     <h2>Welcome to the Mars Rover API Web App</h2>
 
     <form method="get" action="" id="frmRoverType">
+      <!-- 'field' binds the checkboxes to our homeDto and populates them with data from our model via th process-->
       <input type="hidden" th:field="${homeDto.marsApiRoverData}"/>
       <div class="btn-group btn-group-lg" role="group" aria-label="Basic example" style="margin: 2em 0em;">
         <button type="button" class="btn btn-secondary" id="marsApiCuriosity">Curiosity</button>
